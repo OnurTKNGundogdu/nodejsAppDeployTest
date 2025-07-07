@@ -13,3 +13,7 @@ app.get('/jokes', (req, res) => {
   const selected = shuffled.slice(0, 10);
   res.json({ jokes: selected });
 });
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
